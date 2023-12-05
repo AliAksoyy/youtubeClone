@@ -2,7 +2,7 @@ import React from "react";
 
 const YoutubeIcon = () => {
   return (
-    <div className=" border-4 relative flex items-center">
+    <div title="sss" className="border-4 relative flex items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 90 20"
@@ -37,9 +37,7 @@ const YoutubeIcon = () => {
           </g>
         </svg>
       </svg>
-      <span className="absolute top-2 right-40 text-sm text-zinc-600">
-        TR
-      </span>
+      <span className="absolute top-2 right-40 text-sm text-zinc-600">TR</span>
     </div>
   );
 };
