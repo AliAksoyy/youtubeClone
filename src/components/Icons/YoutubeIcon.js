@@ -2,12 +2,12 @@ import React from "react";
 
 const YoutubeIcon = () => {
   return (
-    <div title="sss" className="border-4 relative flex items-center">
+    <div className=" relative flex basis-40 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 90 20"
         focusable="false"
-        className="external-icon h-100 w-2/5"
+        className="external-icon h-full w-full"
       >
         <svg
           viewBox="0 0 90 20"
@@ -37,7 +37,7 @@ const YoutubeIcon = () => {
           </g>
         </svg>
       </svg>
-      <span className="absolute top-2 right-40 text-sm text-zinc-600">TR</span>
+      <span className="absolute top-0 -right-6 text-sm text-zinc-600">TR</span>
     </div>
   );
 };
