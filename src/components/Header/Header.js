@@ -1,8 +1,9 @@
 import React from "react";
 import YoutubeIcon from "../Icons/YoutubeIcon";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoSearchOutline } from "react-icons/io5";
+
 import RecordIcon from "../Icons/RecordIcon";
+import { IoIosSearch } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -18,12 +19,18 @@ const Header = () => {
         </div>
         <YoutubeIcon />
       </div>
-      <div className="border basis-7/12">
-        <input className="border-4" type="text" />
-        <div>
-          <IoSearchOutline />
+      <div className="basis-7/12 flex justify-around items-center py-3">
+        <div className=" flex basis-5/6 h-14 justify-between">
+          <input
+            className="w-full focus:outline-none pl-7 border-2 border-stone-300 rounded-l-full text-2xl "
+            type="text"
+            placeholder="Ara"
+          />
+          <div className="basis-24 flex items-center border-y-2 border-r-2 border-stone-300 justify-center w-6 bg-search rounded-r-full hover:cursor-pointer hover:bg-hoverSearch transition-all">
+            <IoIosSearch fontSize={35} />
+          </div>
         </div>
-        <div>
+        <div className="border p-3 bg-search hover:cursor-pointer rounded-full hover:bg-hoverSearch transition-all">
           <RecordIcon />
         </div>
       </div>
