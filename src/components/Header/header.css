@@ -1,9 +1,8 @@
 .custom-hover-after::after {
-  content: "Sesle arama yapın";
+  content: attr(dataTarget);
   position: absolute;
   bottom: -1.5rem;
-  left: -25%;
- 
+  left: 20%;
   white-space: nowrap;
   visibility: hidden;
   opacity: 0;

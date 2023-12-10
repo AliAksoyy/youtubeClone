@@ -62,19 +62,31 @@ const Header = () => {
               <div className="absolute bg-black rotate-45 w-4/6 h-0.5"></div>
             </div>
           )}
-          <div className="basis-24 flex items-center border-y-2 border-r-2 border-stone-300 justify-center w-6 bg-search rounded-r-full hover:cursor-pointer hover:bg-hoverSearch duration-200">
+          <div
+            dataTarget="Ara"
+            className="relative basis-24 flex items-center border-y-2 border-r-2 border-stone-300 justify-center w-6 bg-search rounded-r-full hover:cursor-pointer hover:bg-hoverSearch duration-200 custom-hover-after"
+          >
             <IoIosSearch fontSize={35} />
           </div>
         </div>
-        <div className="relative border p-3 bg-search hover:cursor-pointer rounded-full hover:bg-hoverSearch duration-200 custom-hover-after">
+        <div
+          dataTarget="Sesle arama yapın"
+          className="relative border p-3 bg-search hover:cursor-pointer rounded-full hover:bg-hoverSearch duration-200 custom-hover-after"
+        >
           <RecordIcon />
         </div>
       </div>
-      <div className="h-full flex items-center  justify-between basis-2/12">
-        <div className=" p-3 rounded-full  hover:bg-hoverSearch duration-200">
+      <div className="cursor-pointer h-full flex items-center  justify-between basis-2/12">
+        <div
+          dataTarget="Oluştur"
+          className="relative p-3 rounded-full  hover:bg-hoverSearch duration-200 custom-hover-after"
+        >
           <CreatedIcon />
         </div>
-        <div className="p-3 rounded-full  hover:bg-hoverSearch duration-200">
+        <div
+          dataTarget="Bildirimler"
+          className="cursor-pointer relative p-3 rounded-full  hover:bg-hoverSearch duration-200 custom-hover-after"
+        >
           <FaRegBell fontSize={30} color="#3b3737" />
         </div>
         <div
