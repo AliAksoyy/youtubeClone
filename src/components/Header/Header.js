@@ -4,6 +4,9 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import "./header.css";
 import RecordIcon from "../Icons/RecordIcon";
 import { IoIosSearch } from "react-icons/io";
+import CreatedIcon from "../Icons/CreatedIcon";
+import { FaRegBell } from "react-icons/fa";
+import avatar from "../../image/avatar.jpg";
 
 const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
@@ -67,7 +70,30 @@ const Header = () => {
           <RecordIcon />
         </div>
       </div>
-      <div className="border-4 basis-2/12">c</div>
+      <div className="h-full flex items-center  justify-between basis-2/12">
+        <div className=" p-3 rounded-full  hover:bg-hoverSearch duration-200">
+          <CreatedIcon />
+        </div>
+        <div className="p-3 rounded-full  hover:bg-hoverSearch duration-200">
+          <FaRegBell fontSize={30} color="#3b3737" />
+        </div>
+        <div
+          onClick={(e) => {
+            if (e.target.tagName === "IMG") {
+              e.target.classList.add("border-2", "border-cyan-500");
+              setTimeout(() => {
+                e.target.classList.remove("border-2", "border-cyan-500");
+              }, 1000);
+            }
+          }}
+        >
+          <img
+            className="cursor-pointer rounded-full w-12"
+            src={avatar}
+            alt="avatar"
+          />
+        </div>
+      </div>
     </div>
   );
 };
