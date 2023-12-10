@@ -53,10 +53,10 @@ const Header = () => {
                 setShowCloseIcon(false);
                 inputRef.current.value = "";
               }}
-              className="cursor-pointer border h-5/6 flex items-center justify-center absolute right-28 top-1 w-12 hover:bg-hoverSearch duration-200 rounded-full"
+              className=" cursor-pointer flex items-center justify-center  absolute top-1/2 w-14 h-5/6 right-24 -translate-y-1/2 rounded-full hover:bg-hoverSearch duration-200"
             >
-              <div className="border-t border w-full border-zinc-900 translate-x-full -rotate-45"></div>
-              <div className=" border-t border w-full border-zinc-900 rotate-45"></div>
+              <div className="absolute bg-black -rotate-45 w-4/6 h-0.5 "></div>
+              <div className="absolute bg-black rotate-45 w-4/6 h-0.5"></div>
             </div>
           )}
           <div className="basis-24 flex items-center border-y-2 border-r-2 border-stone-300 justify-center w-6 bg-search rounded-r-full hover:cursor-pointer hover:bg-hoverSearch duration-200">
