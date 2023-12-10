@@ -22,9 +22,15 @@ const Header = () => {
       <div className="basis-7/12 flex justify-around items-center py-3">
         <div className=" flex basis-5/6 h-14 justify-between">
           <input
-            className="w-full focus:outline-none pl-7 border-2 border-stone-300 rounded-l-full text-2xl "
+            className="w-full focus:outline-none pl-7 border-2 border-stone-300 rounded-l-full text-slate-800 text-lg placeholder:text-slate-500 placeholder:text-xl focus:border-solid focus:border-cyan-800 focus:shadow-slate-400 focus:border focus:shadow-inputShadow "
             type="text"
             placeholder="Ara"
+            onFocus={(e) =>
+              e.target.parentElement.classList.add("shadow-inputShadow")
+            }
+            onBlur={(e) =>
+              e.target.parentElement.classList.remove("shadow-inputShadow")
+            }
           />
           <div className="basis-24 flex items-center border-y-2 border-r-2 border-stone-300 justify-center w-6 bg-search rounded-r-full hover:cursor-pointer hover:bg-hoverSearch transition-all">
             <IoIosSearch fontSize={35} />
