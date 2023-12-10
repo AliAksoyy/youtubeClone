@@ -1,1 +1,21 @@
+.custom-hover-after::after {
+  content: "Sesle arama yapın";
+  position: absolute;
+  bottom: -1.5rem;
+  left: -25%;
+ 
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  padding: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border-radius: 4px;
+}
 
+.custom-hover-after:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(100%);
+}

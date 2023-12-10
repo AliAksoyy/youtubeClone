@@ -66,7 +66,7 @@ const Header = () => {
             <IoIosSearch fontSize={35} />
           </div>
         </div>
-        <div className="border p-3 bg-search hover:cursor-pointer rounded-full hover:bg-hoverSearch duration-200">
+        <div className="relative border p-3 bg-search hover:cursor-pointer rounded-full hover:bg-hoverSearch duration-200 custom-hover-after">
           <RecordIcon />
         </div>
       </div>
